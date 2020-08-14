@@ -7,7 +7,9 @@
 //
 import UIKit
 import SDWebImage
+
 final class DetailsViewController: UIViewController {
+    
     //MARK: - Properties
     @IBOutlet weak var imageCell: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!

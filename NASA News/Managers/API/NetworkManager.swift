@@ -7,7 +7,9 @@
 //
 
 import SwiftyJSON
+
 class NetworkManager {
+    
     var newsList = [Model]()
     
     func fetchData() {

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,9 +17,9 @@
 		FA091E4624E72AF300CED60F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091E4524E72AF300CED60F /* DetailsViewController.swift */; };
 		FA091E4824E72AFC00CED60F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091E4724E72AFC00CED60F /* Model.swift */; };
 		FA091E4A24E72B0D00CED60F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091E4924E72B0D00CED60F /* NetworkManager.swift */; };
-		FA091E4C24E72B5F00CED60F /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091E4B24E72B5F00CED60F /* CellData.swift */; };
 		FA091E4E24E72B7900CED60F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091E4D24E72B7900CED60F /* Extensions.swift */; };
 		FA091E5724E72C2000CED60F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FA091E5624E72C2000CED60F /* Podfile */; };
+		FAB744B924E735D500E86A20 /* NewsDataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB744B824E735D500E86A20 /* NewsDataCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,9 +37,9 @@
 		FA091E4524E72AF300CED60F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		FA091E4724E72AFC00CED60F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		FA091E4924E72B0D00CED60F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
-		FA091E4B24E72B5F00CED60F /* CellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
 		FA091E4D24E72B7900CED60F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		FA091E5624E72C2000CED60F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		FAB744B824E735D500E86A20 /* NewsDataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsDataCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,6 @@
 				E2C09B9B722970C883F4617B /* Pods-NASA News.debug.xcconfig */,
 				DDC452C90E4E9C0E4CECD32C /* Pods-NASA News.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -128,7 +127,7 @@
 		FA091E5024E72BA500CED60F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				FA091E4B24E72B5F00CED60F /* CellData.swift */,
+				FAB744B824E735D500E86A20 /* NewsDataCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -294,8 +293,8 @@
 				FA091E3524E72ABA00CED60F /* MainViewController.swift in Sources */,
 				FA091E3124E72ABA00CED60F /* AppDelegate.swift in Sources */,
 				FA091E4E24E72B7900CED60F /* Extensions.swift in Sources */,
+				FAB744B924E735D500E86A20 /* NewsDataCell.swift in Sources */,
 				FA091E3324E72ABA00CED60F /* SceneDelegate.swift in Sources */,
-				FA091E4C24E72B5F00CED60F /* CellData.swift in Sources */,
 				FA091E4624E72AF300CED60F /* DetailsViewController.swift in Sources */,
 				FA091E4824E72AFC00CED60F /* Model.swift in Sources */,
 			);
@@ -453,7 +452,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jetlaunch.NASA-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -473,7 +472,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.jetlaunch.NASA-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

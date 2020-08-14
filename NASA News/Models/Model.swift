@@ -7,6 +7,7 @@
 //
 
 import Foundation
+
 struct Model {
     var nasa_id: String?
     var title: String

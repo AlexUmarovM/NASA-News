@@ -7,7 +7,9 @@
 //
 
 import UIKit
+
 final class MainViewController: UITableViewController {
+    
     //MARK: - Properties
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     var news = [Model]()
@@ -19,7 +21,7 @@ final class MainViewController: UITableViewController {
         setupView()
     }
     
-   private func setupView() {
+    private func setupView() {
         networkManager.fetchData()
         activityIndicator.startAnimating()
         delay(1) {
@@ -31,6 +33,7 @@ final class MainViewController: UITableViewController {
             }
         }
         navigationController?.navigationBar.barStyle = .black
+        title = Appearance.StringValues.mainVCTitle
     }
     //MARK: - TableView
     
@@ -51,10 +54,10 @@ final class MainViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
         if let indexPath = self.tableView.indexPathForSelectedRow{
             let selectedRow = indexPath.row
-            let dvc = segue.destination as! DetailsViewController
-            dvc.titleText = self.news[selectedRow].title
-            dvc.imageURL = self.news[indexPath.row].href
-            dvc.newsText = self.news[indexPath.row].description
+            let detailsVC = segue.destination as! DetailsViewController
+            detailsVC.titleText = self.news[selectedRow].title
+            detailsVC.imageURL = self.news[indexPath.row].href
+            detailsVC.newsText = self.news[indexPath.row].description
         }
     }
 }

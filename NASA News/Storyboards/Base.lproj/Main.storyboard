@@ -10,66 +10,69 @@
         <!--Root View Controller-->
         <scene sceneID="7h7-fS-iJf">
             <objects>
-                <tableViewController id="blO-v2-HfI" sceneMemberID="viewController">
+                <tableViewController id="blO-v2-HfI" customClass="MainViewController" customModule="NASA_News" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="15e-Ic-51H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <inset key="separatorInset" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        <inset key="separatorInset" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                         <color key="sectionIndexBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <activityIndicatorView key="tableFooterView" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" id="V5e-R5-PZf">
-                            <rect key="frame" x="0.0" y="162" width="414" height="376"/>
+                            <rect key="frame" x="0.0" y="172.5" width="414" height="376"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         </activityIndicatorView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="106" id="IY9-vC-AvW">
-                                <rect key="frame" x="0.0" y="28" width="414" height="106"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NewsCell" id="IY9-vC-AvW" customClass="NewsDataCell" customModule="NASA_News" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="116.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" tableViewCell="IY9-vC-AvW" id="IAe-WK-s9j">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="106"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="116.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qaH-1W-kX7">
-                                            <rect key="frame" x="8" y="8" width="110" height="90"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Z6B-UR-csO">
+                                            <rect key="frame" x="8" y="8" width="110" height="100.5"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="110" id="ILQ-r5-LFO"/>
-                                                <constraint firstAttribute="height" constant="100" id="PXO-XR-s1k"/>
+                                                <constraint firstAttribute="width" constant="110" id="CmC-Dv-De0"/>
+                                                <constraint firstAttribute="height" constant="100" id="bif-tW-eZS"/>
                                             </constraints>
                                         </imageView>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="oeJ-n9-lTN">
-                                            <rect key="frame" x="134" y="8" width="272" height="90"/>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Eh1-9O-r0c">
+                                            <rect key="frame" x="134" y="19" width="252" height="78.5"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ora-Bu-TT9">
-                                                    <rect key="frame" x="0.0" y="0.0" width="272" height="40.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aP3-Wd-f8I">
+                                                    <rect key="frame" x="0.0" y="0.0" width="252" height="35.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RKs-W3-0MB">
-                                                    <rect key="frame" x="0.0" y="48.5" width="272" height="41.5"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9DI-0X-4C2">
+                                                    <rect key="frame" x="0.0" y="43.5" width="252" height="35"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                         </stackView>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="bottom" secondItem="qaH-1W-kX7" secondAttribute="bottom" constant="8" id="2bO-Ji-MEx"/>
-                                        <constraint firstItem="oeJ-n9-lTN" firstAttribute="top" secondItem="IAe-WK-s9j" secondAttribute="top" constant="8" id="H2p-Zi-zIW"/>
-                                        <constraint firstAttribute="trailing" secondItem="oeJ-n9-lTN" secondAttribute="trailing" constant="8" id="Ksv-al-qoY"/>
-                                        <constraint firstItem="qaH-1W-kX7" firstAttribute="top" secondItem="IAe-WK-s9j" secondAttribute="top" constant="8" id="MjT-sd-HfH"/>
-                                        <constraint firstItem="oeJ-n9-lTN" firstAttribute="leading" secondItem="qaH-1W-kX7" secondAttribute="trailing" constant="16" id="rAS-jg-fGJ"/>
-                                        <constraint firstAttribute="bottom" secondItem="oeJ-n9-lTN" secondAttribute="bottom" constant="8" id="uc9-bX-Hcz"/>
-                                        <constraint firstItem="qaH-1W-kX7" firstAttribute="leading" secondItem="IAe-WK-s9j" secondAttribute="leading" constant="8" id="ymK-0F-QHs"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="Eh1-9O-r0c" secondAttribute="bottom" constant="8" id="9mU-CR-BPU"/>
+                                        <constraint firstAttribute="bottom" secondItem="Z6B-UR-csO" secondAttribute="bottom" constant="8" id="GwE-50-ElS"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Eh1-9O-r0c" secondAttribute="trailing" constant="8" id="Shi-5G-M6a"/>
+                                        <constraint firstItem="Z6B-UR-csO" firstAttribute="top" secondItem="IAe-WK-s9j" secondAttribute="top" constant="8" id="g3M-Vi-reC"/>
+                                        <constraint firstItem="Eh1-9O-r0c" firstAttribute="top" secondItem="IAe-WK-s9j" secondAttribute="topMargin" constant="8" id="hl4-QY-8ns"/>
+                                        <constraint firstItem="Z6B-UR-csO" firstAttribute="leading" secondItem="IAe-WK-s9j" secondAttribute="leading" constant="8" id="w5w-Nf-F2N"/>
+                                        <constraint firstItem="Eh1-9O-r0c" firstAttribute="leading" secondItem="Z6B-UR-csO" secondAttribute="trailing" constant="16" id="xGu-ih-SHm"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <connections>
-                                    <segue destination="pxm-eU-ZKI" kind="show" id="Rkq-Uq-ZYy"/>
+                                    <outlet property="date_createdLabel" destination="9DI-0X-4C2" id="j9J-X5-nYG"/>
+                                    <outlet property="imageCell" destination="Z6B-UR-csO" id="4Bh-0c-rkI"/>
+                                    <outlet property="titleLabel" destination="aP3-Wd-f8I" id="zwB-n0-2rP"/>
+                                    <segue destination="pxm-eU-ZKI" kind="show" identifier="detailSegue" id="Rkq-Uq-ZYy"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -79,15 +82,18 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Root View Controller" id="J6k-ka-gsG"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="V5e-R5-PZf" id="NfQ-3s-Mp9"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yc0-bl-IfY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="634.78260869565224" y="167.41071428571428"/>
         </scene>
-        <!--View Controller-->
+        <!--Details View Controller-->
         <scene sceneID="mW2-Qt-8eM">
             <objects>
-                <viewController id="pxm-eU-ZKI" sceneMemberID="viewController">
+                <viewController id="pxm-eU-ZKI" customClass="DetailsViewController" customModule="NASA_News" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wyf-mV-GvG">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -134,6 +140,11 @@
                         <viewLayoutGuide key="safeArea" id="Pcv-pe-yrV"/>
                     </view>
                     <navigationItem key="navigationItem" id="qJn-lh-D4P"/>
+                    <connections>
+                        <outlet property="descriptionTextVIew" destination="PFZ-8c-bo4" id="BR2-0F-JbP"/>
+                        <outlet property="imageCell" destination="VMk-b2-119" id="Jmd-eR-Z9R"/>
+                        <outlet property="titleLabel" destination="HlV-Gi-461" id="7T5-Sl-psL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ikn-UM-KMc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
