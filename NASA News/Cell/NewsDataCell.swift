@@ -9,6 +9,7 @@
 import UIKit
 
 final class NewsDataCell: UITableViewCell {
+    
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak  var imageCell: UIImageView!
     @IBOutlet weak var date_createdLabel: UILabel!

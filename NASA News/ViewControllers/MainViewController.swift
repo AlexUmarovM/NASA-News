@@ -15,7 +15,7 @@ final class MainViewController: UITableViewController {
     var news = [Model]()
     var networkManager = NetworkManager()
     
-    //Mark: - Methods
+    //MARK: - Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
