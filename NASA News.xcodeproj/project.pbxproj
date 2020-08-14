@@ -7,23 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8700AE98A354F62EFCB27505 /* Pods_NASA_News.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E26A14E6E2D92A8754C757E9 /* Pods_NASA_News.framework */; };
 		FA091E3124E72ABA00CED60F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091E3024E72ABA00CED60F /* AppDelegate.swift */; };
 		FA091E3324E72ABA00CED60F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091E3224E72ABA00CED60F /* SceneDelegate.swift */; };
-		FA091E3524E72ABA00CED60F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091E3424E72ABA00CED60F /* ViewController.swift */; };
+		FA091E3524E72ABA00CED60F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091E3424E72ABA00CED60F /* MainViewController.swift */; };
 		FA091E3824E72ABA00CED60F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA091E3624E72ABA00CED60F /* Main.storyboard */; };
 		FA091E3A24E72ABC00CED60F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA091E3924E72ABC00CED60F /* Assets.xcassets */; };
 		FA091E3D24E72ABC00CED60F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA091E3B24E72ABC00CED60F /* LaunchScreen.storyboard */; };
+		FA091E4624E72AF300CED60F /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091E4524E72AF300CED60F /* DetailsViewController.swift */; };
+		FA091E4824E72AFC00CED60F /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091E4724E72AFC00CED60F /* Model.swift */; };
+		FA091E4A24E72B0D00CED60F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091E4924E72B0D00CED60F /* NetworkManager.swift */; };
+		FA091E4C24E72B5F00CED60F /* CellData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091E4B24E72B5F00CED60F /* CellData.swift */; };
+		FA091E4E24E72B7900CED60F /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA091E4D24E72B7900CED60F /* Extensions.swift */; };
+		FA091E5724E72C2000CED60F /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = FA091E5624E72C2000CED60F /* Podfile */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DDC452C90E4E9C0E4CECD32C /* Pods-NASA News.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASA News.release.xcconfig"; path = "Target Support Files/Pods-NASA News/Pods-NASA News.release.xcconfig"; sourceTree = "<group>"; };
+		E26A14E6E2D92A8754C757E9 /* Pods_NASA_News.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NASA_News.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2C09B9B722970C883F4617B /* Pods-NASA News.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NASA News.debug.xcconfig"; path = "Target Support Files/Pods-NASA News/Pods-NASA News.debug.xcconfig"; sourceTree = "<group>"; };
 		FA091E2D24E72ABA00CED60F /* NASA News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NASA News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA091E3024E72ABA00CED60F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA091E3224E72ABA00CED60F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FA091E3424E72ABA00CED60F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA091E3424E72ABA00CED60F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FA091E3724E72ABA00CED60F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA091E3924E72ABC00CED60F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA091E3C24E72ABC00CED60F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA091E3E24E72ABC00CED60F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA091E4524E72AF300CED60F /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		FA091E4724E72AFC00CED60F /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		FA091E4924E72B0D00CED60F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		FA091E4B24E72B5F00CED60F /* CellData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellData.swift; sourceTree = "<group>"; };
+		FA091E4D24E72B7900CED60F /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA091E5624E72C2000CED60F /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +47,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8700AE98A354F62EFCB27505 /* Pods_NASA_News.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B2ECD91E11C76B3ACCCB10E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E26A14E6E2D92A8754C757E9 /* Pods_NASA_News.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DBCFC28EBF194D3FE4DCB66D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2C09B9B722970C883F4617B /* Pods-NASA News.debug.xcconfig */,
+				DDC452C90E4E9C0E4CECD32C /* Pods-NASA News.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		FA091E2424E72ABA00CED60F = {
 			isa = PBXGroup;
 			children = (
+				FA091E5624E72C2000CED60F /* Podfile */,
 				FA091E2F24E72ABA00CED60F /* NASA News */,
 				FA091E2E24E72ABA00CED60F /* Products */,
+				DBCFC28EBF194D3FE4DCB66D /* Pods */,
+				6B2ECD91E11C76B3ACCCB10E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +94,84 @@
 		FA091E2F24E72ABA00CED60F /* NASA News */ = {
 			isa = PBXGroup;
 			children = (
-				FA091E3024E72ABA00CED60F /* AppDelegate.swift */,
-				FA091E3224E72ABA00CED60F /* SceneDelegate.swift */,
-				FA091E3424E72ABA00CED60F /* ViewController.swift */,
-				FA091E3624E72ABA00CED60F /* Main.storyboard */,
+				FA091E5524E72BD100CED60F /* Storyboards */,
+				FA091E4424E72ACC00CED60F /* Delegates */,
+				FA091E4F24E72B7F00CED60F /* ViewControllers */,
+				FA091E5224E72BB300CED60F /* Models */,
+				FA091E5324E72BB900CED60F /* Managers */,
+				FA091E5024E72BA500CED60F /* Cell */,
+				FA091E5124E72BAB00CED60F /* Extensions */,
 				FA091E3924E72ABC00CED60F /* Assets.xcassets */,
-				FA091E3B24E72ABC00CED60F /* LaunchScreen.storyboard */,
 				FA091E3E24E72ABC00CED60F /* Info.plist */,
 			);
 			path = "NASA News";
+			sourceTree = "<group>";
+		};
+		FA091E4424E72ACC00CED60F /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FA091E3024E72ABA00CED60F /* AppDelegate.swift */,
+				FA091E3224E72ABA00CED60F /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		FA091E4F24E72B7F00CED60F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FA091E3424E72ABA00CED60F /* MainViewController.swift */,
+				FA091E4524E72AF300CED60F /* DetailsViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FA091E5024E72BA500CED60F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FA091E4B24E72B5F00CED60F /* CellData.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		FA091E5124E72BAB00CED60F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FA091E4D24E72B7900CED60F /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FA091E5224E72BB300CED60F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FA091E4724E72AFC00CED60F /* Model.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FA091E5324E72BB900CED60F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FA091E5424E72BC300CED60F /* API */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FA091E5424E72BC300CED60F /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FA091E4924E72B0D00CED60F /* NetworkManager.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FA091E5524E72BD100CED60F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA091E3624E72ABA00CED60F /* Main.storyboard */,
+				FA091E3B24E72ABC00CED60F /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +181,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA091E4124E72ABC00CED60F /* Build configuration list for PBXNativeTarget "NASA News" */;
 			buildPhases = (
+				AE35811A763B2B3095481894 /* [CP] Check Pods Manifest.lock */,
 				FA091E2924E72ABA00CED60F /* Sources */,
 				FA091E2A24E72ABA00CED60F /* Frameworks */,
 				FA091E2B24E72ABA00CED60F /* Resources */,
+				F1E42CB9E7A2B857F90402C5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,20 +236,68 @@
 			files = (
 				FA091E3D24E72ABC00CED60F /* LaunchScreen.storyboard in Resources */,
 				FA091E3A24E72ABC00CED60F /* Assets.xcassets in Resources */,
+				FA091E5724E72C2000CED60F /* Podfile in Resources */,
 				FA091E3824E72ABA00CED60F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AE35811A763B2B3095481894 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NASA News-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F1E42CB9E7A2B857F90402C5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NASA News/Pods-NASA News-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NASA News/Pods-NASA News-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NASA News/Pods-NASA News-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA091E2924E72ABA00CED60F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FA091E3524E72ABA00CED60F /* ViewController.swift in Sources */,
+				FA091E4A24E72B0D00CED60F /* NetworkManager.swift in Sources */,
+				FA091E3524E72ABA00CED60F /* MainViewController.swift in Sources */,
 				FA091E3124E72ABA00CED60F /* AppDelegate.swift in Sources */,
+				FA091E4E24E72B7900CED60F /* Extensions.swift in Sources */,
 				FA091E3324E72ABA00CED60F /* SceneDelegate.swift in Sources */,
+				FA091E4C24E72B5F00CED60F /* CellData.swift in Sources */,
+				FA091E4624E72AF300CED60F /* DetailsViewController.swift in Sources */,
+				FA091E4824E72AFC00CED60F /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,11 +439,13 @@
 		};
 		FA091E4224E72ABC00CED60F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2C09B9B722970C883F4617B /* Pods-NASA News.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B5VM7C6TM4;
 				INFOPLIST_FILE = "NASA News/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,11 +459,13 @@
 		};
 		FA091E4324E72ABC00CED60F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDC452C90E4E9C0E4CECD32C /* Pods-NASA News.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = B5VM7C6TM4;
 				INFOPLIST_FILE = "NASA News/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
