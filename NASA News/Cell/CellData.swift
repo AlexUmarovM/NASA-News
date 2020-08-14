@@ -6,4 +6,9 @@
 //  Copyright © 2020 Александр Умаров. All rights reserved.
 //
 
-import Foundation
+import UIKit
+final class NewsDataCell: UITableViewCell {
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var date_createdLabel: UILabel!
+    @IBOutlet weak var imageCell: UIImageView!
+}
